@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    HTML Table
+</title>
+    <style>
+        table {
+            border-collapse:collapse;
+            width:300px;
+            height:200px;
+
+        }
+    </style>
+  
+</head>
+
+<body>
+<main>
+  <table border="3px">
+    <caption> Student Details</caption>
+    <colgroup>
+    <col span="5" style="background-color:blueviolet;"/>
+    </colgroup>
+     <!-- define the attribute name or column name -->
+       <thead>
+            <tr>
+                <th scope="col"> ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col" colspan="2">CGPA</th>
+            </tr>
+       </thead>
+
+       <!-- Create table  body -->
+       <tbody>
+        <!-- for 1 row of table -->
+        <tr>
+        <td scope="row">101</td>
+        <td>pankaj</td>
+        <td>9.42</td>
+        <td rowspan="2">9.4555</td> 
+        </tr>
+        <!-- one row end here -->
+
+         
+             <!-- for 2 row of table -->
+        <tr>
+            <td scope="row">102</td>
+            <td>samarpita</td>
+            <td>9.42</td>
+            <td>9.4555</td>
+            </tr>
+            <!-- 2nd row end here -->
+
+             <!-- for 3 row of table -->
+        <tr>
+            <td>103</td>
+            <td>Annesha</td>
+            <td>9.42</td>
+            <td>9.455</td>
+            </tr>
+            <!-- 3rd row end here -->
+
+            <!-- for 4 row of table -->
+         <tr>
+            <td scope="row">104</td>
+            <td>pankaj</td>
+            <td>9.42</td>
+            <td>9.45</td>
+            </tr>
+            <!-- 4th row end here -->
+
+       </tbody>
+        <!-- table body ends here -->
+  </table>
+</main>
+
+</body>
+
+</html>
